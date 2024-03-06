@@ -29,7 +29,6 @@ const Login = () => {
                     }}
                     onSubmit={async (values) => {
                         console.log(values);
-                        // Redirect to "/in/home" without actual login
                         history("/in/home");
                     }}
                 >
