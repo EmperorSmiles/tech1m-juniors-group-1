@@ -20,7 +20,7 @@ const Welcome = () => {
       className=" h-screen w-screen"
       style={{
         backgroundImage: `url(${backgroundImg})`,
-        backgroundSize: "fit",
+        backgroundSize: "cover",
       }}
     >
       <div className="bg-dblue-900 bg-opacity-70 h-full flex flex-col  md:flex-row items-center content-between md:justify-between px-10 md:px-20" >
