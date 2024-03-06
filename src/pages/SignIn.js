@@ -44,7 +44,7 @@ const SignIn = () => {
         >
           {({ errors, touched }) => (
             <div className="grid px-5 my-5 md:my-0 md:w-1/2 w-fit-content rounded-lg bg-white-30 h-fit-content py-5 md:py-20 justify-between md:px-10 items-center ">
-              {/* Fullname Field */}
+              
               <div>
                 <SignInForm
                   title="Fullname"
@@ -61,14 +61,13 @@ const SignIn = () => {
                 )}
               </div>
 
-              {/* Email Field */}
+              
               <div>
                 <SignInForm
                   title="Email Address"
                   inputType="email"
                   placeholder="Adams@gmail.com"
                   name="email"
-                  // style={getStyles(touched.email, "email", errors.email)}
                   smalltext="Enter your valid email"
                 />
                 <AiOutlineMail className="relative top-[-1.5em] left-[90%] md:left-[75%]" />
@@ -79,18 +78,12 @@ const SignIn = () => {
                 )}
               </div>
 
-              {/* Password Field */}
               <div>
                 <SignInForm
                   title="Password"
                   inputType={showPassword ? "text" : "password"}
                   placeholder="......"
                   name="password"
-                  // style={getStyles(
-                  //   touched.password,
-                  //   "password",
-                  //   errors.password
-                  // )}
                   smalltext="Enter strong password"
                 />
                 {showPassword ? (
@@ -111,13 +104,11 @@ const SignIn = () => {
                 )}
               </div>
 
-              {/* Phone Number Field */}
               <div>
                 <SignInForm
                   title="Phone Number"
                   inputType="text"
                   name="phone"
-                  // style={getStyles(touched.phone, "phone", errors.phone)}
                   placeholder="xxx xxx xxx"
                   smalltext="Enter your phone number with country code"
                 />
@@ -129,7 +120,6 @@ const SignIn = () => {
                 )}
               </div>
 
-              {/* Role Field */}
               <div className="col-span-2 w-[100%] md:w-[95%]">
                 <div className="flex mb-1 justify-between">
                   <label htmlFor="" className="text-primary-500 text-xs">
@@ -148,20 +138,18 @@ const SignIn = () => {
                 <p className="text-xs text-neutral-50">Select your role</p>
               </div>
 
-              {/* Submit Button */}
               <button
                 className="md:col-span-2 rounded-lg disabled:bg-primary-100 hover:bg-primary-500 py-1 bg-primary-200 text-white-10 w-[95%]"
                 type="submit"
               >
+                <Link to="/login">
                 <div className="flex justify-center space-x-2">
                   <img src={arrow} alt="" />
-                  <Link to="/login">
                     <div>Sign up</div>
-                  </Link>
                 </div>
+                  </Link>
               </button>
 
-              {/* Link to Login */}
               <p className="text-xs text-center md:col-span-2">
                 Already have an account!{" "}
                 <Link
