@@ -61,10 +61,10 @@ This page show messages sent to users.
 # Live Demo
 
 This project is hosted on vercel ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-[Live Demo]()
+[Live Demo](https://tech1m-juniors.vercel.app/)
 
 # To clone this repository:
 
--   copy the url: https://github.com/EmperorSmiles/Tech1M-Group-1.git and in your vscode or github desktop,
+-   copy the url: https://github.com/EmperorSmiles/tech1m-juniors-group-1.git and in your vscode or github desktop,
 -   open project in vscode and run: "npm install" to install all dependencies,
 -   then run "npm run start" to view on browser
