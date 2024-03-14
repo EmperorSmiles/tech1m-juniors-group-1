@@ -44,7 +44,6 @@ const SignIn = () => {
         >
           {({ errors, touched }) => (
             <div className="grid px-5 my-5 md:my-0 md:w-1/2 w-fit-content rounded-lg bg-white-30 h-fit-content py-5 md:py-20 justify-between md:px-10 items-center ">
-              
               <div>
                 <SignInForm
                   title="Fullname"
